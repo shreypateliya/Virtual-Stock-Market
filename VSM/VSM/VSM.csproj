@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -66,10 +67,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\location.mdf" />
+    <Content Include="App_Data\location_log.ldf">
+      <DependentUpon>location.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\Master.mdf" />
     <Content Include="App_Data\Master_log.ldf">
       <DependentUpon>Master.mdf</DependentUpon>
     </Content>
+    <Content Include="images\key.png" />
+    <Content Include="images\user.png" />
     <Content Include="Login.aspx" />
     <Content Include="RegisterUser.aspx" />
     <Content Include="Web.config" />

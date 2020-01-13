@@ -12,21 +12,16 @@ namespace VSM
     public partial class Login : System.Web.UI.Page
     {
         connection con = new connection();
-        protected void Page_Load(object sender, EventArgs e)
-        {
-        }
-
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             if(con.userExist(txtmail.Text, txtpass.Text))
             {
                 Session["name"] = con.name;
                 Session["type"] = con.type;
-                LoginError.Text = "user found";
             }
             else
             {
-                LoginError.Text = "User Not found";
+                Response.Write("User Not found");
             }
             Response.Write(con.err);
         }

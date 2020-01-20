@@ -1,0 +1,110 @@
+<html>
+<head>
+  <style>
+  *{
+        font-family: Poppins-Regular,sans-serif;
+      }
+  .txt
+  {
+      border:none;
+      border-bottom: 1.5px solid gray;
+      background: #EFEFEF;
+      text-align: left;
+      top:150px;
+      margin: 20px 0px;
+      width: 200px;
+  }
+  .drop
+  {
+    outline: none;
+  }
+  .label
+  {
+    position: relative;
+    top: -42px;
+    transition: 0.4s;
+    margin-top:20px;
+    transition: 0.4s;
+  }
+  .container
+  {
+    background: #EFEFEF;
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 700px;
+    margin:40px auto;
+    top: 150px;
+    left: 600px;
+    padding:50px;
+  }
+  body
+  {
+  background: linear-gradient(56deg, rgba(2,0,36,1) 0%, rgba(0,241,255,1) 0%, rgba(50,122,251,1) 26%, rgba(227,35,236,1) 100%);
+  }
+  .ta:focus~.lta,.ta:valid~.lta,.tc:focus~.lc,.tc:valid~.lc,.ts:focus~.ls,.ts:valid~.ls,.tci:focus~.lci,.tci:valid~.lci,.tm:focus~.lm,.tm:valid~.lm,.tp:focus~.lp,
+  .tp:valid~.lp
+  {
+      top: -60px;
+  }
+  .txt:focus, .txt:hover
+  {
+    border-bottom: 1.5px solid blue;
+  }
+  .btn{
+    z-index: 1;
+    height: 35px;
+    width: 200px;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.7s;
+    font-family: Poppins-Regular,sans-serif;
+    font-size: 18px;
+  }
+  .btnback{
+    position: absolute;
+    background: linear-gradient(56deg, rgba(15,220,254,1) 4%, rgba(50,122,251,1) 24%, rgba(8,220,255,1) 51%, rgba(50,122,251,1) 73%, rgba(12,211,255,1) 96%);
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    top: 0%;
+    left: 0%;
+    transition: 0.4s;
+  }
+  .btnmain{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    top: 10px;
+    left: 69px;
+    height: 35px;
+    width: 200px;
+  }
+  .btn:hover~.btnback, .btn:focus~.btnback
+  {
+    left: -100%;
+  }
+
+  </style>
+</head>
+<body>
+  <div> Navigation</div>
+  <div class="container">
+  <input type="TextArea" class="txt ta" required><br>
+  <span class="label lta">Address</span><br>
+  <select vlaue="country" class="txt tc drop" required><option value="country" disabled></option></select><br>
+  <span class="label lc">Country</span><br>
+  <select value="state" class="txt ts drop" required><option value="state" disabled></option></select><br>
+  <span class="label ls">state</span><br>
+  <select value="city" class="txt tci drop" required><option value="city" disabled></option></select><br>
+  <span class="label lci">City</span><br>
+  <input type="text" class="txt tm" required><br>
+  <span class="label lm">Image</span><br>
+  <input type="text" class="txt tp" required><br>
+  <span class="label lp">Phone Number</span><br>
+</div>
+</body>

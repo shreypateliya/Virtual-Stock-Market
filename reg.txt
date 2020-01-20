@@ -1,0 +1,175 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication1.WebForm1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <title> Register </title>
+        <style>
+            *
+            {
+                font-family: Poppins-Regular,sans-serif;
+            }
+            .txt
+            {
+                border: none;
+                border-bottom: 1.5px solid gray;
+                background: #EFEFEF;
+                text-align: left;
+                top: 150px;
+                margin: 20px 0px;
+                width: 200px;
+                font-size: 16px;
+            }
+            .label
+            {
+                position: relative;
+                top: -42px;
+                transition: 0.4s;
+                margin-top: 20px;
+                transition: 0.4s;
+            }
+            .glabel
+            {
+                position: relative;
+                transition: 0.4s;
+                margin-top: 20px;
+                transition: 0.2s;
+            }
+            .container
+            {
+                background: #EFEFEF;
+                border-radius: 10px;
+                border: 1px solid grey;
+                width: 700px;
+                margin: 40px auto;
+                top: 150px;
+                left: 600px;
+                padding: 50px;
+            }
+            body
+            {
+                background: linear-gradient(56deg, rgba(2,0,36,1) 0%, rgba(0,241,255,1) 0%, rgba(50,122,251,1) 26%, rgba(227,35,236,1) 100%);
+                background-image: url(C:\Users\Riddhi Patel\Desktop\6th sem\12.jpg);
+            }
+            .fn:focus ~ .lfn, .fn:valid ~ .lfn, .mn:focus ~ .lmn, .mn:valid ~ .lmn, .ln:focus ~ .lln, .ln:valid ~ .lln, .em:focus ~ .lem, .em:valid ~ .lem, .pw:focus ~ .lpw, .pw:valid ~ .lpw, .cpw:focus ~ .lcpw, .cpw:valid ~ .lcpw, .dt:focus ~ .ldt, .dt:valid ~ .ldt
+            {
+                top: -64px;
+                font-size: 12px;
+            }
+            .txt:focus, .txt:hover
+            {
+                border-bottom: 1.5px solid blue;
+            }
+            .btn
+            {
+                z-index: 1;
+                height: 35px;
+                width: 200px;
+                background: none;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                transition: 0.7s;
+                font-family: Poppins-Regular,sans-serif;
+                font-size: 18px;
+            }
+            .btnback
+            {
+                position: absolute;
+                background: linear-gradient(56deg, rgba(15,220,254,1) 4%, rgba(50,122,251,1) 24%, rgba(8,220,255,1) 51%, rgba(50,122,251,1) 73%, rgba(12,211,255,1) 96%);
+                height: 35px;
+                width: 400px;
+                border-radius: 10px;
+                top: 0%;
+                left: 0%;
+                transition: 0.4s;
+            }
+            .btnmain
+            {
+                overflow: hidden;
+                position: relative;
+                border-radius: 10px;
+                top: 10px;
+                left: 69px;
+                height: 35px;
+                width: 200px;
+            }
+            .btn:hover ~ .btnback, .btn:focus ~ .btnback
+            {
+                left: -100%;
+            }
+            .image
+            {
+                height: 23px;
+                width: 23px;
+            }
+            .btnshow
+            {
+                background: none;
+                border: none;
+            }
+            .tooltip
+            {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .tooltiptext
+            {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+            }
+            .tooltip:hover ~ .tooltiptext
+            {
+                visibility: visible;
+            }
+        </style>
+        <script>
+            function show() {
+                var cp = document.getElementById("conpass");
+                if (cp.type == "password") {
+                    cp.type = "text";
+                }
+                else {
+                    cp.type = "password";
+                }
+            }
+        </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="
+    <div class="container">
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="txt fn" required="true"></asp:TextBox><br />
+        <asp:Label ID="Label1" runat="server" Text="First Name" CssClass="label lfn"></asp:Label><br />
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="txt mn" required="true"></asp:TextBox><br />
+        <asp:Label ID="Label2" runat="server" Text="Middle Name" CssClass="label lmn"></asp:Label><br />
+        <asp:TextBox ID="TextBox3" runat="server" CssClass="txt ln" required="true"></asp:TextBox><br />
+        <asp:Label ID="Label3" runat="server" Text="Last Name" CssClass="label lln"></asp:Label><br />
+        <asp:TextBox ID="TextBox4" runat="server" CssClass="txt em" required="true"></asp:TextBox><br />
+        <asp:Label ID="Label4" runat="server" Text="Email" CssClass="label lem"></asp:Label><br />
+        <asp:TextBox ID="TextBox5" runat="server" CssClass="txt pw" required="true" TextMode="Password"></asp:TextBox><br />
+        <asp:Label ID="Label5" runat="server" Text="Password" CssClass="label lpw"></asp:Label><br />
+        <asp:TextBox ID="TextBox6" runat="server" CssClass="txt cpw" required="true" TextMode="Password"></asp:TextBox><br />
+        <asp:Label ID="Label6" runat="server" Text="Confirm password " CssClass="label lcpw"></asp:Label><br />
+        <asp:Label ID="Label7" runat="server" Text="BirthDate" CssClass="glabel"></asp:Label><br />
+        <asp:TextBox ID="TextBox7" runat="server" TextMode="Date"></asp:TextBox><br /><br />
+        <asp:Label ID="Label8" runat="server" Text="Gender" CssClass="glabel"></asp:Label><br />
+        <asp:RadioButton ID="RadioButton1" runat="server" GroupName="r1" Text="Male" />
+        <asp:RadioButton ID="RadioButton2" runat="server" GroupName="r1"  Text="Female"/>
+        <asp:RadioButton ID="RadioButton3" runat="server" GroupName="r1"  Text="Other"/>
+        <span></span>
+    </div>
+    </form>
+</body>
+</html>

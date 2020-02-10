@@ -1,0 +1,482 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication3.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body data-spy="scroll">
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md  stick-top">
+        <button class="float-right navbar-toggler" type="button" data-toggle="collapse" data-target="#n1">
+            <span class="navbar-toggler-icon">
+        </button>
+        <img class="img" src="C:\Users\Riddhi Patel\Desktop\6th sem\icon\chart.png" width="30"
+            height="30">
+        <a href="#" class="navbar-brand text-secondary">VSM</a>
+        <div class="collapse navbar-collapse" id="n1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Market Activity</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">IPO</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">News/Suggestion</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a> </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#m1">
+                        LOGIN</button>
+                    <button type="button" class="btn btn-secondary text-left" data-toggle="modal" data-target="#m2">
+                        REGISTRATION
+                    </button>
+    </nav>
+    <div class="input-group">
+        <input type="text" class="form-control mt-3 search-input text-black" placeholder="Search stocks and companies">
+        <button type="button" class="btn btn-white mt-3 search-button">
+            <i class="fa fa-search text-danger"></i>
+        </button>
+    </div>
+    <!--COM-->
+    <div class=" ">
+        <div class="modal trans" tabindex="-1" role="dialog" id="m1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            LOGIN</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <asp:TextBox ID="txtlg" runat="server" CssClass="t1 form-control  lg mt-2" required="true"></asp:TextBox>
+                            <span class="l1 llg">LOGIN</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtpwd1" runat="server" CssClass="t1 form-control  pw1" required="true"></asp:TextBox>
+                            <span class="l1 lpw1">PASSWORD</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button ID="btnsub" runat="server" Text="Submit" CssClass="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" ">
+        <div class="modal" tabindex="-1" role="dialog" id="m2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            USER REGISTER</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class=" text-center mb-5">
+                            <input type="button" class="btn btn-primary" name="r1" data-toggle="modal" data-target="#m2"
+                                data-dismiss="modal" disabled value="USER">
+                            <input type="button" class="ml-2 btn btn-primary" name="r1 " data-toggle="modal"
+                                data-target="#m3" data-dismiss="modal" value="COMPANY">
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtfn" runat="server" CssClass="t1 form-control fn mt-2" required="true"></asp:TextBox>
+                            <span class="l1 lfn">First Name</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtmn" runat="server" CssClass="t1 form-control  mn" required="true"></asp:TextBox>
+                            <span class="l1 lmn">Middle name</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtln" runat="server" CssClass="t1 form-control  ln mt-2" required="true"></asp:TextBox>
+                            <span class="l1 lln">Last Name</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtem" runat="server" CssClass="t1 form-control  em1" required="true"></asp:TextBox>
+                            <span class="l1 lem1">Email</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtbd" runat="server" CssClass="t1 form-control  bt" required="true"
+                                SelectedDate="1/1/2020" TextMode="Date"></asp:TextBox>
+                            <span class="lrg">BirthDate</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtp" runat="server" CssClass="t1 form-control pw2" required="true"></asp:TextBox>
+                            <span class="l1 lpw2">Password</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtcpw" runat="server" CssClass="t1 form-control cpw1" required="true"></asp:TextBox>
+                            <span class="l1 lcpw1">Confirm Password</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txta" runat="server" CssClass="t1 form-control  ad1" required="true"
+                                TextMode="MultiLine"></asp:TextBox>
+                            <span class="l1 lad1">Address</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:DropDownList ID="dropcon" runat="server" CssClass="t1 form-control con1" required="true">
+                            </asp:DropDownList>
+                            <span class="l1 lcon1">Country</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:DropDownList ID="dropst" runat="server" CssClass="t1 form-control st1" required="true">
+                            </asp:DropDownList>
+                            <span class="l1 lst1">State</span>
+                        </div>
+                        <div class="for-group">
+                            <asp:DropDownList ID="dropci" runat="server" class="t1  form-control ct1" required="true">
+                            </asp:DropDownList>
+                            <span class="l1 lct1">City</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:FileUpload ID="FileUpload1" runat="server" CssClass="t1 form-control im" required="true" />
+                            <span class="lrg">Image</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtph" runat="server" CssClass="t1 form-control ph" required="true">
+                            </asp:TextBox>
+                            <span class="l1 lph">Phone Number</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                            Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" ">
+        <div class="modal" tabindex="-1" role="dialog" id="m3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            COMPANY REGISTER</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class=" text-center mb-5">
+                            <input type="button" class="btn btn-primary" name="r1" data-toggle="modal" data-target="#m2"
+                                data-dismiss="modal" value="USER">
+                            <input type="button" class="ml-2 btn btn-primary" name="r1" data-toggle="modal" data-target="#m3"
+                                data-dismiss="modal" disabled value="COMPANY">
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtcn" CssClass="t1 form-control n mt-2" runat="server" required="true"></asp:TextBox>
+                            <span class="l1 lnn">Company Name</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtcon" runat="server" CssClass="t1 form-control  cn" required="true"></asp:TextBox>
+                            <span class="l1 lcn">Contact Number</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtcp" runat="server" CssClass="t1 form-control  cp" required="true"></asp:TextBox>
+                            <span class="l1  lcp">Contact Person</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtlem" runat="server" CssClass="t1 form-control  em2" required="true"></asp:TextBox>
+                            <span class="l1 lem2">Email</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="TextBox1" runat="server" CssClass="t1 form-control  gs" required="true"></asp:TextBox>
+                            <span class="l1 lgs">GST Number</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtcin" CssClass="t1 form-control cin" required="true" runat="server"></asp:TextBox>
+                            <span class="l1 lcin">CIN</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtrdt" runat="server" CssClass="t1 form-control  rg" required="true"
+                                TextMode="Date">
+                            </asp:TextBox>
+                            <span class="lrg">Registration Date</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtpw" runat="server" CssClass="t1 form-control pw3" required="true"
+                                TextMode="Password"></asp:TextBox>
+                            <span class="l1 lpw3">Password</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtcw" runat="server" CssClass="t1 form-control cpw2" required="true"
+                                TextMode="Password"></asp:TextBox>
+                            <span class="l1 lcpw2">Confirm Password</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtad" runat="server" CssClass="t1 form-control  ad2" required="true"
+                                TextMode="MultiLine"></asp:TextBox>
+                            <span class="l1 lad2">Address</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:DropDownList ID="dropCountry" runat="server" required="true" CssClass="t1 form-control con2">
+                            </asp:DropDownList>
+                            <span class="l1 lcon2">Country</span>
+                        </div>
+                        <div class="form-group">
+                            <asp:DropDownList ID="dropState" runat="server" CssClass="t1 form-control st2" required="true">
+                            </asp:DropDownList>
+                            <span class="l1 lst2">State</span>
+                        </div>
+                        <div class="for-group">
+                            <asp:DropDownList ID="dropCity" runat="server" CssClass="t1 ct form-control ct2"
+                                required="true">
+                            </asp:DropDownList>
+                            <span class="l1 lct2">City</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        FEEDBACK</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Enter Feedback here" TextMode="MultiLine"
+                        CssClass="ta" Rows="6"></asp:TextBox>
+                </div>
+                <div class="modal-footer">
+                    <asp:Button ID="Button2" runat="server" Text="Submit" CssClass="btn btn-primary"
+                        data-dismiss="modal" />
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class=" btn1 btn btn-info  ml-1" data-toggle="modal" data-target="#exampleModal">
+        FEEDBACK</button>
+    <!--image slider-->
+    <!--image slider-->
+    <!--welcome-->
+    <!--welcome-->
+    <!--three column-->
+    <!--two column-->
+    <!--two column-->
+    <!--fixed imagebackgrund-->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+    <!--fixed imagebackgrund-->
+    <!--Emoji section-->
+    <button class="btn btn-primary z1" data-toggle="collapse" data-target="#emoji">
+        fun</button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <i class="fa fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <!--Emoji section-->
+    <!--meet the team-->
+    <div class="container-fluid padding">
+        <div class="row welcom text-center">
+            <div class="col-12">
+                <h1 class="display-4">
+                    Meet the team</h1>
+            </div>
+        </div>
+    </div>
+    <!--meet the team-->
+    <!--cards-->
+    <div class="container-fluid pading">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <i class="fa fa-picture-o fa-5x"></i>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            shikhar shah</h4>
+                        <p class="card-text">
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <i class="fa fa-picture-o fa-5x"></i>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            shrey pateliya</h4>
+                        <p class="card-text">
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--card-->
+    <hr />
+    <!--two column-->
+    <div class="container-fluid p-auto">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>
+                    If you build it</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsu
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsu
+                </p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/chart.png"  Cssclass="img-fluid" width="50%" height="auto" />
+            </div>
+        </div>
+    </div>
+    <!--two column-->
+    <hr class="my-4">
+    <!--connect-->
+    <!--connect-->
+    <div class="modal" tabindex="-1" role="dialog" id="Div2" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        FEEDBACK</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <asp:TextBox ID="TextBox3" runat="server" placeholder="Enter Feedback here" TextMode="MultiLine"
+                        CssClass="ta" Rows="6"></asp:TextBox>
+                </div>
+                <div class="modal-footer">
+                    <asp:Button ID="Button3" runat="server" Text="Submit" CssClass="btn btn-primary"
+                        data-dismiss="modal" />
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mw-100 bg-dark">
+          <div class="container-fluid ">
+              <div class="row text-left">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 ml-5">
+                      <hr class="light">
+                      <p>
+                          <a href="#"><i class="fa fa-envelope text-info fa-2x"></i></a>
+                          <label class="text text-light">
+                              abc@VSM.com</label></p>
+                      <p>
+                          <a href="#"><i class=" fa fa-phone text-secondary fa-2x"></i></a>
+                          <label class="text text-light  txt3">
+                              +1234567890</label></p>
+                      <p>
+                          <a href="#"><i class="fa fa-map-marker text-danger fa-3x"></i></a>
+                          <label class="text text-light">
+                              Vadodara<br>
+                              Gujarat,India</label></p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 ml-5">
+                      <hr class="light">
+                      <p>
+                          <label class="font-weight-bold text-light">
+                          POPULAR LINKS</lable></p>
+                      <p>
+                          <a href="#" class="text-light txt">CAREERS</a>
+                      <p>
+                      <p>
+                          <a href="#" class="text-light txt">ADVERTISE</a></p>
+                      <p>
+                          <a href="#" class="text-light">MARKETSITE</a></p>
+                      <p class="pt-5">
+                          <a href="#" class="text-light ">SITEMAP</a></p>
+                      <p>
+                          <a href="#" class="text-light txt">PRIVACY</a></p>
+                      <p>
+                          <a href="#" class="text-light txt">COOKIES</a></p>
+                      <p>
+                          <a href="#" class="text-light txt">LEGAL</a></p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 ml-5">
+                      <hr class="light">
+                      <label class="font-weight-bold text-light">
+                          PLATFORM INFO</label><br><a href="#" class="text-light">About US</a></br>
+                      <a href="#" class="text-light">CONTACT US</a></br> <a href="#" class="text-light">HISTORY</a></br>
+                      <h5 class="text-light font-weight-bold pt-5">
+                          Follow US</h5>
+                      <br>
+                      <a href="#"><i class="fa fa-facebook fa-3x pr-4 hov1"></i></a><a href="#"><i class="fa fa-twitter fa-3x pr-4 hov2">
+                      </i></a><a href="#"><i class="fa fa-instagram fa-3x pr-4 hov3"></i></a><a href="#"><i
+                          class=" fa fa-linkedin fa-3x pr-4 hov4"></i></a>
+                  </div>
+                  <div class="col-12">
+                      <hr class="">
+                      <h5 class="text-center text-5x font-weight-bold">
+                          &copy;2020,VSM, Inc. All Rights Reserved.</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    </form>
+    <script type="text/javascript">
+        function togglesidebar() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+    <script src="bootstrap-4.4.1-dist/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.js" type="text/javascript"></script>
+</body>
+</html>

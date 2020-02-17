@@ -1,7 +1,0 @@
-G:\Projects\6th sem\VSM\VSM\bin\VSM.dll.config
-G:\Projects\6th sem\VSM\VSM\bin\VSM.dll
-G:\Projects\6th sem\VSM\VSM\bin\VSM.pdb
-G:\Projects\6th sem\VSM\VSM\obj\Debug\VSM.csprojAssemblyReference.cache
-G:\Projects\6th sem\VSM\VSM\obj\Debug\VSM.csproj.CoreCompileInputs.cache
-G:\Projects\6th sem\VSM\VSM\obj\Debug\VSM.dll
-G:\Projects\6th sem\VSM\VSM\obj\Debug\VSM.pdb

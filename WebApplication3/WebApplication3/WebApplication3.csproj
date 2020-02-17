@@ -115,7 +115,9 @@
     <Content Include="admin_frame.aspx" />
     <Content Include="payment.aspx" />
     <Content Include="credit.aspx" />
-    <Content Include="XMLFile1.xml" />
+    <Content Include="XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">

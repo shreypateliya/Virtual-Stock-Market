@@ -8,10 +8,27 @@
 {
   width:100%;
   box-shadow: 5px 5px #f5f5f;
-  outline:none;
+  border:none;
 }
 .vl {
-  border-left: 5px solid red;
-  height: 500px;
-  margin-left:50%;
+  border-left: 2px solid #ccc;
+  height: 70vh;
 }
+ .a
+  {
+            height: 201px;
+            width: 450px;
+        }
+ <table class="table">
+                                    <h4>
+                                            Contact Number</h4>
+                                        <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+                                        <h4>
+                                            Contact Person</h4>
+                                        <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
+                                        <h4>
+                                            Email</h4>
+                                        <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
+                                        <h4>
+                                            Address</h4>
+                                        <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label>

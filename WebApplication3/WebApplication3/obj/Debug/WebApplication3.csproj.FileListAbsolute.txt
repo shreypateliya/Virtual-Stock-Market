@@ -6,3 +6,7 @@ C:\Users\Riddhi Patel\Desktop\6th sem\WebApplication3\WebApplication3\bin\WebApp
 C:\Users\Riddhi Patel\Desktop\6th sem\WebApplication3\WebApplication3\bin\WebApplication3.pdb
 C:\Users\Riddhi Patel\Desktop\6th sem\WebApplication3\WebApplication3\obj\Debug\WebApplication3.dll
 C:\Users\Riddhi Patel\Desktop\6th sem\WebApplication3\WebApplication3\obj\Debug\WebApplication3.pdb
+E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.dll
+E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.pdb
+E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.dll
+E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.pdb

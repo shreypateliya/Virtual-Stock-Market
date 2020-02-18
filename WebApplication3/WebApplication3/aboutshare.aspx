@@ -39,7 +39,7 @@
                             <div class="row">
                                 <div class="col-lg-7 col-sm-7 col-md-7 d-flex justify-content-left">
                                     <h1 class="text-info">
-                                        <asp:Label ID="Label3" runat="server" Text="Label">Share Name</asp:Label>
+                                        <asp:Label ID="lblName" runat="server" Text="Label">Share Name</asp:Label>
                                     </h1>
                                 </div>
                                 <div class="col-lg-5 col-sm-7 col-md-7 d-flex justify-content-left ml-auto">
@@ -53,15 +53,15 @@
                                 <div class="col-lg-6
         col-sm-6 col-md-6 d-flex justify-content-left ">
                                     <p class="text-secondary">
-                                        BSE:
+                                        Id:
                                     </p>
-                                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                                    <asp:Label ID="lblId" runat="server" Text="Label"></asp:Label>
                                     <div class="col-lg-6
         col-sm-6 col-md-6 d-flex justify-content-left">
                                         <p class="text-secondary">
                                             Secotor:
                                         </p>
-                                        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                                        <asp:Label ID="lblSector" runat="server" Text="Label"></asp:Label>
                                     </div>
                                 </div>
                             </div>
@@ -103,13 +103,13 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                                                    <asp:Label ID="lblSymbol" runat="server" Text="Label"></asp:Label>
                                                 </td>
                                                 <td>
-                                                    <asp:Label ID="Label19" runat="server" Text="Label"></asp:Label>
+                                                    <span></span>
                                                 </td>
                                                 <td>
-                                                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                                                    <asp:Label ID="lblComapny" runat="server" Text="Label"></asp:Label>
                                                 </td>
                                                 <td>
                                             </tr>
@@ -130,13 +130,13 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+                                                    <span> </span>
                                                 </td>
                                                 <td>
-                                                    <asp:Label ID="Label18" runat="server" Text="Label" CssClass=" justify-content-left"></asp:Label>
+                                                    <span> </span>
                                                 </td>
                                                 <td>
-                                                    <asp:Label ID="Label21" runat="server" Text="Label"></asp:Label>
+                                                    <span></span>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -170,19 +170,19 @@
                                             <td>
                                                 <h4 class="">
                                                     GST NO.</h4>
-                                                <asp:Label ID="Label14" runat="server" Text="Label" CssClass=""></asp:Label>
+                                                <asp:Label ID="lblGst" runat="server" Text="Label" CssClass=""></asp:Label>
                                             </td>
                                             <td>
                                                 <h4 class="">
                                                     Registration No.
                                                 </h4>
-                                                <asp:Label ID="Label10" runat="server" Text="Label" CssClass=""></asp:Label>
+                                                <asp:Label ID="lblRegDt" runat="server" Text="Label" CssClass=""></asp:Label>
                                             </td>
                                             <td>
                                                 <h4 class="">
                                                     Market Capital
                                                 </h4>
-                                                <asp:Label ID="Label20" runat="server" Text="Label" CssClass=""></asp:Label>
+                                                <asp:Label ID="lblMarkCap" runat="server" Text="Label" CssClass=""></asp:Label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -190,13 +190,13 @@
                                                 <h4 class="">
                                                     CIN NO.
                                                 </h4>
-                                                <asp:Label ID="Label15" runat="server" Text="Label" CssClass=""></asp:Label>
+                                                <asp:Label ID="lblCIN" runat="server" Text="Label" CssClass=""></asp:Label>
                                             </td>
                                             <td>
                                                 <h4 class="">
                                                     Sector
                                                 </h4>
-                                                <asp:Label ID="Label11" runat="server" Text="Label" CssClass=""></asp:Label>
+                                                <asp:Label ID="lblSec2" runat="server" Text="Label" CssClass=""></asp:Label>
                                             </td>
                                         </tr>
                                     </table>
@@ -215,24 +215,24 @@
                                                     <td>
                                                         <h4>
                                                             Contact Number</h4>
-                                                        <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
+                                                        <asp:Label ID="lblContact" runat="server" Text="Label"></asp:Label>
                                                     </td>
                                                     <td>
                                                         <h4>
                                                             Contact Person</h4>
-                                                        <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
+                                                        <asp:Label ID="lblPerson" runat="server" Text="Label"></asp:Label>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
                                                         <h4>
                                                             Email</h4>
-                                                        <asp:Label ID="Label16" runat="server" Text="Label"></asp:Label>
+                                                        <asp:Label ID="lblMail" runat="server" Text="Label"></asp:Label>
                                                     </td>
                                                     <td>
                                                         <h4>
                                                             Address</h4>
-                                                        <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label>
+                                                        <asp:Label ID="lblAdd" runat="server" Text="Label"></asp:Label>
                                                     </td>
                                                 </tr>
                                             </table>

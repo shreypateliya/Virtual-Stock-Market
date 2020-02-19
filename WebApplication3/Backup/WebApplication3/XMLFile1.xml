@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<advertisement>
+  <ad>
+    <imageUrl>~\images\pin.png</imageUrl>
+    <NavigateUrl>https://www.google.com/</NavigateUrl>
+    <AlternateText>Google.com</AlternateText>
+    <impression>30</impression>
+    <keyword>Google</keyword>
+  </ad>
+</advertisement>
+<h6 class="text-secondary">BSE:</h6>
+<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

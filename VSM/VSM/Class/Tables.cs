@@ -12,11 +12,13 @@ namespace VSM.Class
         private int cols = 0;
         private string[,] data;
         private string qs = "";
+        private string[] name;
 
         public int Rows { get => rows; set => rows = value; }
         public int Cols { get => cols; set => cols = value; }
         public string[,] Data { get => data; set => data = value; }
         public string Qs { get => qs; set => qs = value; }
+        public string[] Name { get => name; set => name = value; }
 
         //creates a table object from a dataReader object
         public Tables(SqlDataReader result, String qs)
@@ -27,12 +29,16 @@ namespace VSM.Class
                 Rows = getRowCount(result);
                 Cols = result.FieldCount;
                 Data = new string[Rows, Cols];
-
+                Name = new string[cols];
                 connection con = new connection();
                 con.open();
                 SqlCommand cmd = new SqlCommand(qs, con.Con);
                 SqlDataReader result1 = cmd.ExecuteReader();
 
+                for (int i = 0; i < Cols; i++)
+                {
+                    Name[i] = result1.GetName(i);
+                }
                 for (int i = 0; i < Rows; i++)
                 {
                     result1.Read();
@@ -64,10 +70,18 @@ namespace VSM.Class
         //print the data in a tabular format
         public void print()
         {
-            HttpContext.Current.Response.Write("<table>");
+            HttpContext.Current.Response.Write("<table align=\"center\" class='table w-50'> <tr class='ml-5'>");
+
+            for(int i = 0; i < cols; i++)
+            {
+                HttpContext.Current.Response.Write("<th> " + name[i] + " </th>");
+            }
+
+            HttpContext.Current.Response.Write("</tr>");
+
             for (int i = 0; i < Rows; i++)
             {
-                HttpContext.Current.Response.Write("<tr>");
+                HttpContext.Current.Response.Write("<tr id="+i+">");
                 for (int j = 0; j < Cols; j++)
                 {
                     HttpContext.Current.Response.Write("<td> " + Data[i, j] + " </td>");
@@ -133,9 +147,9 @@ namespace VSM.Class
             int l = Math.Min(cs1.Length, cs2.Length);
             for (int i = 0; i < l; i++)
             {
-                if(cs1[i] != cs2[i])
+                if (cs1[i] != cs2[i])
                 {
-                    if(cs1[i] < cs2[i])
+                    if (cs1[i] < cs2[i])
                     {
                         diff = -1;
                     }

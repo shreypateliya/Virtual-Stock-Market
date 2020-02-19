@@ -16,3 +16,10 @@ I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplicati
 I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.csproj.CoreCompileInputs.cache
 I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.dll
 I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.pdb
+J:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.dll.config
+J:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.dll
+J:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.pdb
+J:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.csprojAssemblyReference.cache
+J:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.csproj.CoreCompileInputs.cache
+J:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.dll
+J:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.pdb

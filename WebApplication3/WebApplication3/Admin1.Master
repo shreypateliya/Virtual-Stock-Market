@@ -8,22 +8,16 @@
     <link href="css/admin1.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <style style="text/css">
-.search-input
-{
-  background:transparent;
-  border:none;
-  border-radius: 0;
-  border-bottom: 2px solid #999;
-  width:400px;
-}
-@media(max-width:768px)
-{
-    .icon
-    {
-        margin-left:0px;
-    }
-}
+    <style type="text/css">
+        .search-input {
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            border-bottom: 2px solid #999;
+            width: 400px;
+        }
+
+        
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -31,9 +25,8 @@
 <body>
     <form id="form1" runat="server">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
         </asp:ContentPlaceHolder>
-    <div class="wrapper">
+        <div class="wrapper">
             <!-- Sidebar -->
             <nav id="sidebar">
                 <div class="sidebar-header">
@@ -70,7 +63,7 @@
                         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-align-justify"></i>
+                            <i class="fa fa-align-justify"></i>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <div class="row align-items-center">
@@ -106,7 +99,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                                <div class="row pt-md-5 mt-md-3 mb-5">
+                                <div class="row pt-md-0 mt-md-0 mb-3">
                                     <div class="col-xl-3  col-sm-6 col-md-6 p-2">
                                         <div class="card card-comman bg-secondary">
                                             <div class="card-body py-5">
@@ -182,7 +175,7 @@
                 </section>
             </div>
         </div>
-    </div>
+        </div>
     </form>
     <script src="bootstrap-4.4.1-dist/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
     <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.js" type="text/javascript"></script>
@@ -199,5 +192,5 @@
 </body>
 </html>
 
-    
+
 

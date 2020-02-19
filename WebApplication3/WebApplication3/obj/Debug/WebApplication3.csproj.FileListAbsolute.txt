@@ -10,3 +10,9 @@ E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplicat
 E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.pdb
 E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.dll
 E:\projects\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.pdb
+I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.dll.config
+I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.dll
+I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\bin\WebApplication3.pdb
+I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.csproj.CoreCompileInputs.cache
+I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.dll
+I:\project\Virtual-Stock-Market\WebApplication3\WebApplication3\obj\Debug\WebApplication3.pdb

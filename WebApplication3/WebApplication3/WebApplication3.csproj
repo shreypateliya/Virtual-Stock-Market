@@ -121,10 +121,9 @@
     <Content Include="ewallet.aspx" />
     <Content Include="error.aspx" />
     <Content Include="capcha.html" />
-    <Content Include="admin_frame.aspx" />
     <Content Include="payment.aspx" />
     <Content Include="credit.aspx" />
-    <Content Include="admin_content.aspx" />
+    <Content Include="WebForm6.aspx" />
     <Content Include="XMLFile1.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -267,13 +266,6 @@
     <Compile Include="WebForm5.aspx.designer.cs">
       <DependentUpon>capcha.html</DependentUpon>
     </Compile>
-    <Compile Include="admin_frame.aspx.cs">
-      <DependentUpon>admin_frame.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_frame.aspx.designer.cs">
-      <DependentUpon>admin_frame.aspx</DependentUpon>
-    </Compile>
     <Compile Include="payment.aspx.cs">
       <DependentUpon>payment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -288,12 +280,12 @@
     <Compile Include="credit.aspx.designer.cs">
       <DependentUpon>credit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin_content.aspx.cs">
-      <DependentUpon>admin_content.aspx</DependentUpon>
+    <Compile Include="WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin_content.aspx.designer.cs">
-      <DependentUpon>admin_content.aspx</DependentUpon>
+    <Compile Include="WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

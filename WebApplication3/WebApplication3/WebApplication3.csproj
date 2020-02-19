@@ -107,6 +107,7 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Test.aspx" />
+    <Content Include="user_format.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -115,7 +116,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="home_content.aspx" />
-    <Content Include="admin_box.aspx" />
+    <Content Include="user_box.aspx" />
     <Content Include="upi.aspx" />
     <Content Include="ewallet.aspx" />
     <Content Include="error.aspx" />
@@ -123,7 +124,6 @@
     <Content Include="admin_frame.aspx" />
     <Content Include="payment.aspx" />
     <Content Include="credit.aspx" />
-    <Content Include="WebForm4.aspx" />
     <Content Include="admin_content.aspx" />
     <Content Include="XMLFile1.xml">
       <SubType>Designer</SubType>
@@ -197,12 +197,12 @@
     <Compile Include="home.Master.designer.cs">
       <DependentUpon>home.Master</DependentUpon>
     </Compile>
-    <Compile Include="admin.Master.cs">
-      <DependentUpon>admin.Master</DependentUpon>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin.Master.designer.cs">
-      <DependentUpon>admin.Master</DependentUpon>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
     </Compile>
     <Compile Include="home_content.aspx.cs">
       <DependentUpon>home_content.aspx</DependentUpon>
@@ -211,12 +211,12 @@
     <Compile Include="home_content.aspx.designer.cs">
       <DependentUpon>home_content.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin_box.aspx.cs">
-      <DependentUpon>admin_box.aspx</DependentUpon>
+    <Compile Include="user_box.aspx.cs">
+      <DependentUpon>user_box.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin_box.aspx.designer.cs">
-      <DependentUpon>admin_box.aspx</DependentUpon>
+    <Compile Include="user_box.aspx.designer.cs">
+      <DependentUpon>user_box.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin1.Master.cs">
       <DependentUpon>Admin1.Master</DependentUpon>
@@ -253,12 +253,12 @@
     <Compile Include="error.aspx.designer.cs">
       <DependentUpon>error.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm4.aspx.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
+    <Compile Include="user_format.aspx.cs">
+      <DependentUpon>user_format.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm4.aspx.designer.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
+    <Compile Include="user_format.aspx.designer.cs">
+      <DependentUpon>user_format.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm5.aspx.cs">
       <DependentUpon>capcha.html</DependentUpon>
@@ -317,7 +317,7 @@
     <None Include="bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js.map" />
     <None Include="bootstrap-4.4.1-dist\js\bootstrap.js.map" />
     <None Include="bootstrap-4.4.1-dist\js\bootstrap.min.js.map" />
-    <Content Include="admin.Master" />
+    <Content Include="User.Master" />
     <Content Include="Admin1.Master" />
   </ItemGroup>
   <PropertyGroup>

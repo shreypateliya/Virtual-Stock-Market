@@ -116,15 +116,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="home_content.aspx" />
-    <Content Include="user_box.aspx" />
     <Content Include="upi.aspx" />
     <Content Include="ewallet.aspx" />
     <Content Include="error.aspx" />
     <Content Include="capcha.html" />
     <Content Include="payment.aspx" />
     <Content Include="credit.aspx" />
-    <Content Include="WebForm6.aspx" />
-    <Content Include="WebForm7.aspx" />
+    <Content Include="admin_content.aspx" />
+    <Content Include="company_info.aspx" />
+    <Content Include="User_content.aspx" />
     <Content Include="XMLFile1.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -197,12 +197,12 @@
     <Compile Include="home.Master.designer.cs">
       <DependentUpon>home.Master</DependentUpon>
     </Compile>
-    <Compile Include="User.Master.cs">
-      <DependentUpon>User.Master</DependentUpon>
+    <Compile Include="Site4.Master.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User.Master.designer.cs">
-      <DependentUpon>User.Master</DependentUpon>
+    <Compile Include="Site4.Master.designer.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
     </Compile>
     <Compile Include="home_content.aspx.cs">
       <DependentUpon>home_content.aspx</DependentUpon>
@@ -210,13 +210,6 @@
     </Compile>
     <Compile Include="home_content.aspx.designer.cs">
       <DependentUpon>home_content.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="user_box.aspx.cs">
-      <DependentUpon>user_box.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="user_box.aspx.designer.cs">
-      <DependentUpon>user_box.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin1.Master.cs">
       <DependentUpon>Admin1.Master</DependentUpon>
@@ -260,6 +253,13 @@
     <Compile Include="user_format.aspx.designer.cs">
       <DependentUpon>user_format.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User_content.aspx.cs">
+      <DependentUpon>User_content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_content.aspx.designer.cs">
+      <DependentUpon>User_content.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm5.aspx.cs">
       <DependentUpon>capcha.html</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,19 +281,19 @@
     <Compile Include="credit.aspx.designer.cs">
       <DependentUpon>credit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm6.aspx.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
+    <Compile Include="admin_content.aspx.cs">
+      <DependentUpon>admin_content.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm6.aspx.designer.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
+    <Compile Include="admin_content.aspx.designer.cs">
+      <DependentUpon>admin_content.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm7.aspx.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
+    <Compile Include="company_info.aspx.cs">
+      <DependentUpon>company_info.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm7.aspx.designer.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
+    <Compile Include="company_info.aspx.designer.cs">
+      <DependentUpon>company_info.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -317,8 +317,8 @@
     <None Include="bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js.map" />
     <None Include="bootstrap-4.4.1-dist\js\bootstrap.js.map" />
     <None Include="bootstrap-4.4.1-dist\js\bootstrap.min.js.map" />
-    <Content Include="User.Master" />
     <Content Include="Admin1.Master" />
+    <Content Include="Site4.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
